@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>JavaScript Workshop</title>
+    <script src="/script/for loop.js" ></script>
+    <script src="/script/nav.js"></script>
+</head>
+<body>
+    <nav>
+        <h3>menu</h3>
+        <ul>
+            <li><a href="/html/index.html">Variables et affectation</a></li>
+            <li><a href="/html/Valider une date.html">Conditions</a></li>
+            <li class="menu"><a href="#" onfocus="showboucle()">Boucles</a></li>
+            <li class="hidden" id="show-1"><a href="/html/la boucle for.html">La boucle for</a></li>     
+            <li class="hidden" id="show-2"><a href="/html/la boucle.while.html">La boucle while</a></li>
+            <li class="hidden" id="show-3"><a href="/html/la boucle inbrique.html">Les boucles imbriquées</a></li>
+            <li class="menu"><a href="#" onfocus="showcaractères()">Chaines de caractères</a></li>
+            <li class="hidden" id="show-01"><a href="/html/Recherche et suppression dans une chaine.html">Recherche et suppression</a></li>
+            <li class="hidden"  id="show-02"><a href="/html/voiel.html">Nombre de voyelles</a></li>
+            <li class="menu"><a href="#" onfocus="showTableaux()">Tableaux</a></li>
+            <li class="hidden" id="show-001"><a href="/html/Tri d'un tableau.html">Tri</a></li>
+            <li class="hidden" id="show-002"><a href="/html/recherche.html">Recherche</a></li>
+            <li><a href="/html/calculator.html">Fonctions</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <h1>Table de multiplication</h1>
+        </header>
+        <h2>Enoncé</h2>
+        <section>    
+            <p>Afficher la table de multiplication d’un nombre saisi par l’utilisateur dans un input.</p>
+        </section>
+        <h2>Démo</h2>
+        <section> 
+            <input type="number" id="for-input">
+            <button type="button" id="table", onclick="table()">Générer la table</button>
+            <p id="result"></p>
+        </section>
+        <h2>Code source</h2>
+        <section id="last">     
+            <pre id="code"></pre>
+        </section>
+    </main>
+</body>
+</html>

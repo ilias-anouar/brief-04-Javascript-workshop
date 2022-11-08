@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title> Calculator </title>
+    <script src="/script/calculator.js "></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="/script/nav.js"></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <h3>menu</h3>
+        <ul>
+            <li>
+                <a href="/html/index.html"> Variables et affectation </a>
+            </li>
+            <li>
+                <a href="/html/Valider une date.html"> Conditions </a>
+            </li>
+            <li class="menu">
+                <a href="#" onfocus="showboucle()"> Boucles </a>
+            </li>
+            <li class="hidden" id="show-1">
+                <a href="/html/la boucle for.html"> La boucle for </a>
+            </li>
+            <li class="hidden" id="show-2">
+                <a href="/html/la boucle.while.html">
+                    La boucle while </a>
+            </li>
+            <li class="hidden" id="show-3">
+                <a href="/html/la boucle inbrique.html">Les boucles imbriquées</a>
+            </li>
+            <li class="menu">
+                <a href="#" onfocus="showcaractères()">Chaines de caractères</a>
+            </li>
+            <li class="hidden" id="show-01">
+                <a href="/html/Recherche et suppression dans une chaine.html">Recherche et suppression</a>
+            </li>
+            <li class="hidden" id="show-02">
+                <a href="/html/voiel.html">Nombre de voyelles</a>
+            </li>
+            <li class="menu">
+                <a href="#" onfocus="showTableaux()">Tableaux</a>
+            </li>
+            <li class="hidden" id="show-001">
+                <a href="/html/Tri d'un tableau.html">Tri</a>
+            </li>
+            <li class="hidden" id="show-002">
+                <a href="/html/recherche.html">Recherche</a>
+            </li>
+            <li>
+                <a href="/html/calculator.html">Fonctions</a>
+            </li>
+        </ul>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <h1>Calculatrice</h1>
+        </header>
+        <h2>Enoncé</h2>
+        <section>
+
+            <p>Créez 4 fonctions Javascript (Somme, Soustraction, Division, Multiplication).
+                L’utilisateur saisie deux nombres dans deux inputs, choisi ensuite une opération
+                arithmétique. Le résultat est donné par l’une des 4 fonctions Javascript.
+            </p>
+        </section>
+        <h2>Démo</h2>
+        <section>
+
+
+
+
+            <label for="number1"></label>
+            <input type="number" id="number1" value="">
+            <label for="number2"></label>
+            <input type="number" id="number2" value="">
+            <br>
+
+            <input type="submit" name="button" value="+" onclick="plus()">
+            <input type="submit" name="button" value="-" onclick="minus()">
+            <input type="submit" name="button" value="/" onclick="divide()">
+            <input type="submit" name="button" value="x" onclick="multiply()">
+            <br>
+
+            <p>Results:
+            </p>
+            <output id="results"></output>
+        </section>
+        <h2>Code source</h2>
+        <section id="last">
+            <pre id="code"></pre>
+        </section>
+    </main>
+</body>
+
+</html>
